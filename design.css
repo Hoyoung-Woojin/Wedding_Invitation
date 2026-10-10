@@ -1,0 +1,188 @@
+/* 한글: 나눔명조. 영문 장식 제목은 각 영역 지정 글꼴 사용. */
+body{font-family:'Nanum Myeongjo',serif}
+button,input,select,textarea{font-family:inherit}
+/* 기획안 1차 디자인. 커버 값은 480px 카드 기준이며 카드 폭에 비례합니다. */
+main{container-type:inline-size;overflow:hidden}
+.cover{padding:0 0 17.5cqw;background:#e8d3d1}
+.cover .credits{padding:16px 4cqw 0;margin:0 0 5.5cqw;font-size:calc(2.9cqw + 2pt);line-height:1.3;font-weight:500;gap:10px}
+.cover-photo{width:89.655%;max-width:none;aspect-ratio:650/864;margin:0 auto;border-radius:50%;background:#e8d3d1}
+.cover-photo .cover-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:center;position:static}
+.cover h1{transform:translateY(8px);font-family:'Pinyon Script',cursive;font-size:calc(18.2cqw + 2pt);line-height:1.08;font-weight:400;white-space:nowrap;margin:0 0 8.8cqw;letter-spacing:-.03em;color:#521514}
+.cover h2{font-size:calc(4.55cqw + 2pt);font-weight:700;margin:0 0 5.4cqw;line-height:1.4;color:#531514}
+.cover .name-divider{font-family:'Pinyon Script',cursive;font-size:calc(4.4cqw + 3pt + 2pt);color:#8d615f;font-weight:400;margin:0 2.6cqw}
+.cover p{font-size:calc(3.65cqw + 2pt);line-height:1.8;color:#8d615f;letter-spacing:-.025em}
+.cover .cover-date{margin:0 0 1.4cqw}
+.cover .cover-venue{margin:0;line-height:1.9}
+.family{padding:24cqw 4cqw 15cqw;background:#f2e7e5}
+.family p{font-size:calc(3.8cqw + 2pt);gap:1.8cqw;line-height:1.8;margin:0;flex-wrap:nowrap;white-space:nowrap}
+.family p+p{margin-top:5cqw}
+.family .relationship{font-size:calc(2.8cqw + 2pt);color:#8d615f;letter-spacing:.04em}
+.family strong{font-size:calc(4cqw + 2pt)}
+.invitation{padding:10cqw 6.2cqw 20cqw}
+.invitation-star{font-size:calc(32px + 2pt);line-height:1;margin-bottom:35px;font-weight:300}
+.invitation p{font-size:calc(14px + 2pt);line-height:2.25;word-break:keep-all}
+.invitation .signature{margin-top:34px;font-size:calc(12px + 2pt)}
+.rsvp-section,.gallery-section{padding:64px 6.2cqw 68px}
+.rsvp-section h2,.gallery-section h2,.location-section h2{font-size:calc(40px + 2pt);line-height:1.1;letter-spacing:.03em}
+.gallery-section h2,.location-section h2{text-transform:uppercase}
+.rsvp-section h2{margin-bottom:29px}
+.rsvp-section p{font-size:calc(13px + 2pt);line-height:2}
+.rsvp-section small{font-size:calc(11px + 2pt);color:#aeaeae;margin:24px 0}
+.rsvp-section #open{width:100%;max-width:320px;min-height:48px;border:0;box-shadow:0 3px 8px #00000010}
+.gallery-caption{margin-bottom:30px}
+.gallery-grid{gap:5px}
+.account-section{background:#f8f8f8;padding:64px 6.2cqw 60px}
+.account-section::before{content:'';display:block;width:48px;border-top:1px solid #777;margin:0 auto 45px}
+.account-section #account-heading{font-size:calc(17px + 2pt);color:#313131;margin-bottom:14px}
+.account-intro{font-size:calc(12px!important + 2pt);line-height:1.9;color:#999!important;margin-bottom:35px}
+.account-group{border:0;background:#fff;border-radius:8px;box-shadow:0 3px 7px #00000018;margin:14px 0}
+.account-group summary{padding:18px;min-height:56px;color:#555;font-size:calc(14px + 2pt)}
+.account-group summary::after{content:'⌄';font-size:calc(18px + 2pt);color:#aaa}
+.account-group[open] summary::after{content:'⌃'}
+.account-list{padding:9px;background:#eee7ed}
+.account-row{grid-template-columns:minmax(0,1fr);gap:12px;border:0;padding:18px 14px;background:white;border-radius:7px;box-shadow:0 3px 6px #00000012}
+.account-row+.account-row{margin-top:9px}
+.account-row>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.account-person{font-size:calc(11px + 2pt);color:#555;white-space:nowrap;margin:0}
+.account-number{font-size:calc(11px + 2pt);color:#555;text-align:right;word-break:keep-all}
+.account-copy{min-height:38px;width:100%;text-align:left;padding:8px 12px;color:#fff;background:#8d615f;border:0;font-size:calc(11px + 2pt)}
+.account-copy::after{content:'⧉';float:right;font-size:calc(16px + 2pt);line-height:1}
+.account-pending{font-size:calc(10px + 2pt);text-align:right}
+.location-section{background:#f3edf2;padding:64px 6.2cqw 40px}
+.location-section h2{margin-bottom:30px}
+.location-venue{font-size:calc(13px!important + 2pt);line-height:1.8}
+.location-address{color:#999!important}
+.location-map{border-radius:0}
+.map-buttons{gap:8px}
+.map-buttons a,.map-buttons button{background:white;border:0;box-shadow:0 2px 5px #00000012;color:#777;min-height:42px}
+.transport-info{margin-top:30px}
+.transport-block{border-bottom:1px solid #ceb7c7;padding:25px 0}
+.transport-block:first-child{border-top:1px solid #ceb7c7}
+.transport-block h3{font-size:calc(13px + 2pt);font-weight:400;color:#b996af;margin-bottom:16px}
+.transport-block p{font-size:calc(12px + 2pt);line-height:1.95;color:#555}
+.share-section{background:#fff;padding:48px 6.2cqw 60px}
+.share-section #share-heading{color:#999;font-size:calc(12px + 2pt)}
+.share-buttons{max-width:none;gap:12px}
+.share-buttons button{min-height:48px;border:0;border-radius:9px;text-align:left;padding:12px 18px}
+.share-buttons #share-invitation{background:#fae889;color:#313131}
+.share-buttons #share-invitation::after{content:'↗';float:right;font-size:calc(18px + 2pt)}
+.share-buttons #copy-invitation{background:#b996af;color:#fff;border:0}
+.share-buttons #copy-invitation::after{content:'⧉';float:right;font-size:calc(18px + 2pt)}
+@media(max-width:340px){.account-row>div{flex-wrap:wrap}.account-number{text-align:left}.family .relationship{letter-spacing:0}}
+@supports not (width:1cqw){.cover{padding:12px 0 70px}.cover .credits{padding:4px 4%;font-size:calc(13px + 2pt);margin-bottom:24px}.cover h1{font-size:calc(clamp(54px,18vw,87px) + 2pt);margin-bottom:36px}.cover h2{font-size:calc(19px + 2pt);margin-bottom:24px}.cover .name-divider{font-size:calc(18px + 3pt + 2pt);margin:0 10px}.cover p{font-size:calc(14px + 2pt)}.family{padding:90px 16px 60px}.family p{font-size:calc(14px + 2pt);gap:6px}.family .relationship{font-size:calc(10px + 2pt)}.family strong{font-size:calc(15px + 2pt)}}
+
+.transport-block h3{display:flex;align-items:center;gap:9px}.transport-icon{width:20px;height:20px;flex:none}
+#share-help{max-width:360px;text-align:center}#share-help h2{font-family:'Nanum Myeongjo',serif;font-size:calc(19px + 2pt)}#share-help p{font-size:calc(13px + 2pt);line-height:1.9;color:#777;word-break:keep-all}.share-help-actions{display:grid;gap:10px}.share-help-actions a{display:block;padding:13px;border:1px solid #b996af;border-radius:5px;color:#8d615f;font-size:calc(13px + 2pt);text-decoration:none}.share-help-actions button{font-size:calc(13px + 2pt)}
+
+/* 2pt 확대 후 네 타이틀은 기존 크기 유지 */
+body{font-size:calc(16px + 2pt)}
+.cover h1{font-size:18.2cqw}
+.rsvp-section h2,.gallery-section h2,.location-section h2{font-size:40px}
+.transport-block h3{display:flex;align-items:center;gap:9px;font-weight:700;line-height:1.25}
+.transport-block h3 span{display:block;line-height:1.25}
+.transport-icon{display:block;width:22px;height:22px;flex:0 0 22px;align-self:center}
+.share-buttons button{display:flex;align-items:center;justify-content:flex-start;gap:12px;line-height:1.4}
+.share-buttons #share-invitation::after,.share-buttons #copy-invitation::after{float:none;margin-left:auto;flex:none;line-height:1}
+@supports not (width:1cqw){.cover h1{font-size:clamp(54px,18vw,87px)}}
+
+/* 글꼴의 시각적 중심을 기준으로 미세 정렬 */
+.transport-icon{transform:translateY(-2px)}
+.transport-block h3{color:#531514;font-weight:800}
+.share-button-label{display:block;position:relative;top:1px}
+
+/* 6차 미세 조정: 직전 위치에서 아이콘 -1px, 공유하기 문구 +1px */
+.transport-icon{transform:translateY(-3px)}
+#share-invitation .share-button-label{top:2px}
+
+/* RSVP 팝업만 확대 전 크기로 복원 */
+#welcome,#modal{font-size:16px}
+#modal h2{font-size:19px}
+#modal>.intro{font-size:12px}
+#modal label,#modal legend{font-size:12px}
+#modal .options label{font-size:13px}
+#modal input,#modal textarea{font-size:14px}
+#form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),#form textarea,#form select{font-size:16px}
+#modal .counter span{font-size:13px}
+#modal .counter button{font-size:22px}
+#modal .counter output{font-size:17px}
+#modal #total{font-size:12px}
+#modal .privacy{font-size:calc(10px - 1pt)}
+#modal .consent{font-size:11px}
+#modal .actions button{font-size:13px}
+#modal #status{font-size:14px}
+#modal #phone::placeholder{font-size:13px}
+#welcome h2{font-size:21px}
+#welcome .welcome-note{font-size:13px}
+#welcome .wedding-card,#welcome .wedding-card .couple{font-size:14px}
+#welcome .wedding-card .primary,#welcome-close{font-size:14px}
+/* 계좌 안내 문구만 1pt 축소 */
+.account-intro{font-size:calc(12px + 1pt)!important}
+#gallery-more{display:flex;align-items:center;justify-content:center;gap:7px;line-height:1.4}
+#gallery-more span{display:block;line-height:1;transform:translateY(1px)}
+.account-group summary::after{display:block;line-height:1;transform:translateY(1px);align-self:center}
+.transport-block h3{color:#cda0b4}
+.bus-bullet{color:#cda0b4}
+
+/* 계좌 이름만 굵게, 복사 결과 안내 크기 복원 */
+.account-name{font-weight:800}
+#account-status{font-size:12px!important}
+#location-status,#share-status{font-size:11px!important}
+#gallery-more .gallery-chevron{display:block;width:8px;height:8px;flex:0 0 8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-2px) rotate(45deg);line-height:normal}
+
+/* 버스 두 항목: 문단 사이 여백을 제거하고 본문 한 줄 간격에 맞춤 */
+.transport-block:nth-child(2) p{margin:0;line-height:1.95}
+/* 계좌 화살표: 더보기와 같은 8px 도형, 방향별 시각 중심 보정 */
+.account-group summary{position:relative;padding-right:46px}
+.account-group summary::after{content:'';position:absolute;right:18px;top:50%;display:block;width:8px;height:8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;color:#aaa;line-height:normal;transform:translateY(-6px) rotate(45deg)}
+.account-group[open] summary::after{content:'';transform:translateY(-2px) rotate(225deg)}
+
+/* 교통편 아이콘 직전 위치에서 1px 아래 / 주차 뒤 마지막 구분선 제거 */
+.transport-icon{transform:translateY(-2px)}
+.transport-block:last-child{border-bottom:0}
+
+/* 교통편 아이콘 직전 위치에서 1px 아래로 이동 */
+.transport-icon{transform:translateY(-1px)}
+
+/* 지하철 노선 배지와 안내 문구를 같은 행의 중앙에 맞춤 */
+.transport-block .subway-row{display:flex;align-items:center;gap:7px}
+.subway-lines{display:flex;align-items:center;gap:4px;flex:none}
+.subway-lines .line-badge{display:block;margin:0;white-space:nowrap}
+.subway-description{display:block;min-width:0;line-height:1.95;position:relative;top:1px}
+
+/* Wedding Day: 기존 아래 8px 유지, 왼쪽 3px 이동 */
+.cover h1{transform:translate(-3px,8px)}
+
+/* Wedding Day: 직전 위치에서 왼쪽으로 2px 추가 이동 */
+.cover h1{transform:translate(-5px,8px)}
+
+/* 커버: 현재 위치를 기준으로 위로 미세 이동 */
+.cover-photo{transform:translateY(-5px)}
+.cover h1{transform:translate(-5px,5px)}
+.cover h2{transform:translateY(-3px)}
+/* 이미지의 일반적인 저장·선택 동작 제한 */
+img,.cover-photo,.gallery-thumb,#photo-stage{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+img{-webkit-user-drag:none}
+
+/* 직전 위치 기준: 사진 위로 5px 추가, 날짜·장소 위로 3px */
+.cover-photo{transform:translateY(-10px)}
+.cover .cover-date,.cover .cover-venue{transform:translateY(-3px)}
+/* 모바일: 실제 이미지가 길게 누르기의 대상이 되지 않도록 컨테이너로 입력 전달 */
+.cover-photo img,.gallery-thumb img,#photo-stage img{pointer-events:none;-webkit-touch-callout:none}
+.cover-photo,.gallery-thumb,#photo-stage,#photo-stage *{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+
+/* 청첩장 마지막 이미지 */
+.ending-section{background:#fff;padding:0 24px 36px;text-align:center}
+.ending-section img{display:block;width:100%;max-width:320px;height:auto;margin:0 auto;pointer-events:none;-webkit-touch-callout:none}
+
+/* 마지막 이미지: 현재 위치에서 위로 10px 이동 */
+.ending-section img{transform:translateY(-10px)}
+
+/* 마지막 이미지: 직전 위치에서 위로 10px 추가 이동 */
+.ending-section img{transform:translateY(-20px)}
+
+/* 사진 확대 화면: 화살표 2pt 축소 및 도형 중심 정렬 */
+#photo-modal .photo-navigation button{display:flex;align-items:center;justify-content:center;padding:0;width:54px;height:44px;min-height:44px;font-size:30px;line-height:1}
+#photo-modal .photo-navigation button{font-size:0}
+#photo-modal .photo-navigation button::before{content:"";display:block;width:16px;height:16px;border-top:1px solid currentColor;border-right:1px solid currentColor;flex:none}
+#photo-prev::before{transform:translateX(4px) rotate(-135deg)}
+#photo-next::before{transform:translateX(-4px) rotate(45deg)}

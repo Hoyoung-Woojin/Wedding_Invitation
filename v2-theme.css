@@ -1,0 +1,53 @@
+/* V2 theme — separate from V1, all existing JS behavior preserved. */
+:root{--v2-sage:#c8d9ad;--v2-light:#eef2e7;--v2-olive:#7e8b65;--v2-forest:#234d2b;--v2-green:#91bd87;--v2-ink:#4b5940}
+body{background:#e3e9d6;color:var(--v2-ink)}
+main{background:var(--v2-light)}
+.cover{background:var(--v2-sage)}
+.cover .credits,.cover p{color:#74875e}
+.cover-photo{border-radius:50%;}
+.cover h1{color:var(--v2-forest)}
+.cover h2{color:var(--v2-forest)}
+.cover .name-divider{color:#9fae8b}
+.family{background:#f0f4e8}
+.family p,.family strong{color:#526448}
+.family .relationship{color:#98a48a}
+.invitation{background:#eaf0e5}
+.invitation p,.invitation .signature{color:#445444}
+.invitation-star{color:#9bab79}
+.rsvp-section,.gallery-section{background:#fff}
+.rsvp-section h2,.gallery-section h2,.location-section h2{color:#505b47}
+.rsvp-section button.primary,button.primary{background:var(--v2-green);border-color:var(--v2-green);color:#fff}
+.rsvp-section small,.gallery-caption{color:#9ba398!important}
+#gallery-more{border-color:#dce5d5;color:#68815e}
+.flower-notice{background:var(--v2-olive);color:#f9faef;text-align:center;padding:68px 18px 74px}
+.flower-notice .flower-kicker{font:normal 13px/1.4 Georgia,serif;letter-spacing:.33em;color:#f8f9ed;margin:0 0 39px}
+.flower-notice h2{font-family:'Nanum Myeongjo',serif;font-size:clamp(23px,6cqw,31px);font-weight:400;line-height:1.5;color:#fff;margin:0 0 34px}
+.flower-notice p:not(.flower-kicker){color:#f8f9ed;font-size:clamp(13px,3.5cqw,17px);line-height:2.15;margin:0 0 13px;word-break:keep-all}
+.account-section{background:#eef2e7}
+.account-section #account-heading,.account-group summary{color:#4e6047}
+.account-group{background:#fff}
+.account-list{background:#e5ebd9}
+.account-copy{background:var(--v2-olive)}
+.account-status,.account-number{color:#687b5c}
+.location-section{background:#e8eee0}
+.transport-block{border-bottom-color:#c6d0b5}
+.transport-block:first-child{border-top-color:#c6d0b5}
+.transport-block h3,.bus-bullet{color:#819a72}
+.share-section{background:#fff}
+.share-section #share-heading{color:#6e8064}
+.share-buttons #share-invitation{background:#d8e6be;color:#31492b}
+.share-buttons #copy-invitation{background:var(--v2-olive);color:#fff}
+.ending-section{background:#fff}
+/* RSVP: colors only — preserve geometry, sizes, spacing and form behavior. */
+#welcome,#modal{background:#f9fbf6}
+#welcome h2,#modal>.intro{color:#7e9874}
+#welcome .wedding-card{background:#e4edda;color:#687964}
+#welcome .wedding-card .couple{color:#425d3e}
+#welcome .wedding-card hr{border-top-color:#cadbbf}
+#welcome .wedding-card .primary,#modal button.primary{background:var(--v2-green);border-color:var(--v2-green)}
+#modal .options label:has(input:checked){background:#92bd88;border-color:#92bd88}
+#modal .counter button,#modal #total{color:#6f906b}
+#modal .counter button{border-color:#cbddc1}
+#modal .consent input{accent-color:#91bd87}
+#welcome .rsvp-deadline strong,#welcome .rsvp-deadline time,.rsvp-section .rsvp-deadline strong,.rsvp-section .rsvp-deadline time{color:#708a60}
+.rsvp-closed-card{background:#e5eddb}.rsvp-closed-icon{border-color:#8dab7a;color:#8dab7a}
