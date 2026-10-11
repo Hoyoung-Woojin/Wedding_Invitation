@@ -165,3 +165,6 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   color:#9bab79;
   overflow:visible;
 }
+
+/* Family relationship labels: black text, keep size and layout. */
+.family .relationship{color:#202020;}
