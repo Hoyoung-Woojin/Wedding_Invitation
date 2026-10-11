@@ -440,12 +440,23 @@
     }
 
     order.forEach((item, index) => {
-      const delay = index < 5
-        ? rand(0, 650)
-        : rand(850, 3400);
+  if (index < 6) {
+    // Start six leaves already in motion.
+    animateLeaf(item, 0);
 
-      animateLeaf(item, delay);
-    });
+    const animation = animations.get(item.element);
+
+    if (animation) {
+      const duration = animation.effect.getTiming().duration;
+
+      // Begin partway through each leaf's flight.
+      animation.currentTime = duration * rand(0.25, 0.48);
+    }
+  } else {
+    // Remaining leaves enter naturally from offscreen.
+    animateLeaf(item, rand(500, 2500));
+  }
+});
   }
 
   // ==========================================
