@@ -111,3 +111,15 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 @supports not (width:1cqw){
   .cover .name-divider{font-size:calc(18px + 3pt + 6pt)}
 }
+
+/* 2026-10-11: RSVP welcome card information text only.
+   Couple names, wedding date/time and venue: +2pt, dark text.
+   Excludes the CTA button, modal title, explanatory note and deadline. */
+#welcome .wedding-card p{
+  font-size:calc(14px + 2pt);
+  color:#202020;
+}
+#welcome .wedding-card .couple{
+  font-size:calc(14px + 2pt);
+  color:#202020;
+}
