@@ -152,3 +152,16 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   font-size:calc(11px + 3pt);
   color:#202020 !important;
 }
+
+/* V2 2026-10-11: family and invitation share one sage-tinted background. */
+.family,.invitation{background:#eaf0e5}
+/* Replace the old asterisk-like ornament with paired olive branches. */
+.invitation .invitation-ornament{
+  display:block;
+  width:150px;
+  height:34px;
+  max-width:50%;
+  margin:0 auto 35px;
+  color:#9bab79;
+  overflow:visible;
+}
