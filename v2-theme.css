@@ -226,3 +226,12 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 /* V2: Make invitation signature the same font size as the invitation body. */
 .invitation .signature{font-size:calc(2.8cqw + 4pt)}
 @supports not (width:1cqw){.invitation .signature{font-size:calc(10px + 4pt)}}
+
+/* V2 RSVP 안내 문구: 마감일 일반 텍스트와 동일한 회색. */
+.rsvp-section > small{color:#777!important;}
+
+/* V2 RSVP 마감 날짜와 D-day: 요청한 진한 녹색. */
+.rsvp-section .rsvp-deadline time,
+.rsvp-section .rsvp-deadline strong,
+#welcome .rsvp-deadline time,
+#welcome .rsvp-deadline strong{color:#1b6b08!important;}
