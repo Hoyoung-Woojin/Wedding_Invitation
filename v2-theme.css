@@ -212,3 +212,13 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 /* Match invitation body font size to family relationship labels ("의 외동 아들" / "의 둘째 딸"). */
 .invitation p:not(.signature){font-size:calc(2.8cqw + 4pt)}
 @supports not (width:1cqw){.invitation p:not(.signature){font-size:calc(10px + 4pt)}}
+
+/* V2 sharing button: match supplied yellow reference, without altering the copy button. */
+.share-section .share-buttons #share-invitation{
+  background-color:#F9E887;
+  color:#202020;
+}
+.share-section .share-buttons #share-invitation .share-button-label,
+.share-section .share-buttons #share-invitation::after{
+  color:#202020;
+}
