@@ -316,3 +316,9 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 #modal #form .counter-controls button{
   padding:2px 0 0 !important;
 }
+
+/* V2 RSVP: increase only the two question legends and name label by 1pt. */
+#modal #form fieldset legend,
+#modal #form label[for="name"] {
+  font-size:calc(12px + 1pt);
+}
