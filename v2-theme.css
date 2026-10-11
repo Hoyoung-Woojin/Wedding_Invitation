@@ -252,3 +252,36 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 #modal .rsvp-deadline strong {
   color: #1b6b08 !important;
 }
+
+/* V2 RSVP: precise vertical/horizontal button alignment and matching focus rings. */
+#modal #form .options label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:44px;
+  line-height:1;
+  padding-block:12px;
+  box-sizing:border-box;
+}
+#modal #form .counter-controls button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0;
+  line-height:1;
+  box-sizing:border-box;
+}
+/* Match the visible keyboard/tap focus frame of editable fields and choices. */
+#modal #form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):focus,
+#modal #form textarea:focus,
+#modal #form select:focus,
+#modal #form .options label:focus-within{
+  outline:2px solid #8d615f;
+  outline-offset:2px;
+}
+/* Keep the selected choice visibly framed even after focus moves to another field. */
+#modal #form .options label:has(input:checked){
+  border:1px solid #8d615f;
+}
