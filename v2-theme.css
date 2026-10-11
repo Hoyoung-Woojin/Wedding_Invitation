@@ -123,3 +123,26 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   font-size:calc(14px + 2pt);
   color:#202020;
 }
+
+
+/* V2 RSVP input modal: stronger contrast for specified form labels. */
+#modal #form fieldset legend,
+#modal #form label[for="name"],
+#modal #form label[for="phone"],
+#modal #form label[for="message"]{
+  color:#202020;
+}
+
+/* Selection option labels: +1pt, dark gray in selected and unselected states. */
+#modal #form .options label,
+#modal #form .options label:has(input:checked){
+  font-size:calc(13px + 1pt);
+  color:#404040;
+}
+
+/* Phone number hint only: +1pt and dark gray. */
+#modal #phone::placeholder{
+  font-size:calc(13px + 1pt);
+  color:#404040;
+  opacity:1;
+}
