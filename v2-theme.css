@@ -64,3 +64,21 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 #welcome,#modal,#welcome p,#modal p,#modal small,#modal label,#modal legend,#modal input,#modal textarea,#modal output,#modal button,#welcome button,#welcome .wedding-card,#welcome .wedding-card .couple{font-weight:500}
 #welcome h2,#modal h2{font-weight:600}
 #welcome .couple strong,#modal strong{font-weight:800}
+
+/* V2 cover refinement — oval portrait sized to the supplied reference. */
+.cover .cover-photo{
+  width:90%;
+  max-width:none;
+  aspect-ratio:3 / 4;
+  border-radius:50%;
+  overflow:hidden;
+  margin-inline:auto;
+}
+.cover .cover-photo .cover-portrait{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+/* Date and venue only: dark neutral text for higher legibility. */
+.cover .cover-date,.cover .cover-venue{color:#202020}

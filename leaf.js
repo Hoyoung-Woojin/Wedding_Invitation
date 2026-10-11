@@ -17,7 +17,7 @@
 
   const CONFIG = {
     count: 12,
-    diagonalCount: 10,
+    diagonalCount: 12,
 
     minSize: 6,
     maxSize: 7.5,
