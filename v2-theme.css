@@ -240,3 +240,7 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
    Account holder names and bank numbers retain black/bold. */
 .account-section .account-person{color:#999;}
 .account-section .account-name{color:#202020;font-weight:700;}
+
+/* Cover portrait enlargement: match the red outlined oval in the supplied reference. */
+.cover .cover-photo{width:97%;max-width:none;aspect-ratio:3 / 4;margin-left:auto;margin-right:auto;border-radius:50%;overflow:hidden;}
+.cover .cover-photo .cover-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
