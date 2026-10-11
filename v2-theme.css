@@ -235,3 +235,8 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 .rsvp-section .rsvp-deadline strong,
 #welcome .rsvp-deadline time,
 #welcome .rsvp-deadline strong{color:#1b6b08!important;}
+
+/* V2: account relationship labels match the account introduction (#999).
+   Account holder names and bank numbers retain black/bold. */
+.account-section .account-person{color:#999;}
+.account-section .account-name{color:#202020;font-weight:700;}
