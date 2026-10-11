@@ -51,3 +51,16 @@ main{background:var(--v2-light)}
 #modal .consent input{accent-color:#91bd87}
 #welcome .rsvp-deadline strong,#welcome .rsvp-deadline time,.rsvp-section .rsvp-deadline strong,.rsvp-section .rsvp-deadline time{color:#708a60}
 .rsvp-closed-card{background:#e5eddb}.rsvp-closed-icon{border-color:#8dab7a;color:#8dab7a}
+
+/* V2 readability update: increase type weight one step without changing layout/sizes.
+   Normal 400 -> 500; medium 500 -> 600; bold 700 -> 800. */
+body,button,input,select,textarea{font-weight:500}
+p,small,label,legend,summary,output,.gallery-caption,.account-intro,.location-address,.transport-block p,.share-button-label,.account-number,.account-person,.account-copy,.account-pending,.map-buttons a,.map-buttons button{font-weight:500}
+.cover h1,.cover .name-divider{font-weight:500}
+.cover .credits{font-weight:600}
+.family .relationship,.invitation .signature{font-weight:500}
+h1,h2,h3,.rsvp-section h2,.gallery-section h2,.location-section h2,.account-section #account-heading,.share-section #share-heading{font-weight:500}
+strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.rsvp-deadline strong,.rsvp-deadline time{font-weight:800}
+#welcome,#modal,#welcome p,#modal p,#modal small,#modal label,#modal legend,#modal input,#modal textarea,#modal output,#modal button,#welcome button,#welcome .wedding-card,#welcome .wedding-card .couple{font-weight:500}
+#welcome h2,#modal h2{font-weight:600}
+#welcome .couple strong,#modal strong{font-weight:800}

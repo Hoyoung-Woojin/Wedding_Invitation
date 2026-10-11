@@ -11,9 +11,9 @@
   ].forEach(id => document.getElementById(id)?.remove());
 
   const main = document.querySelector('main');
-  const rsvp = document.querySelector('.rsvp-section');
+  const cover = document.querySelector('.cover');
 
-  if (!main || !rsvp) return;
+  if (!main || !cover) return;
 
   const CONFIG = {
     count: 12,
@@ -460,7 +460,7 @@
   }
 
   // ==========================================
-  // KEEP LEAVES ABOVE RSVP
+  // KEEP LEAVES INSIDE WEDDING DAY COVER ONLY
   // ==========================================
 
   let frameId = null;
@@ -471,7 +471,7 @@
     if (destroyed) return;
 
     const mainRect = main.getBoundingClientRect();
-    const rsvpRect = rsvp.getBoundingClientRect();
+    const coverRect = cover.getBoundingClientRect();
 
     const width = mainRect.width;
     const height = layer.clientHeight || innerHeight;
@@ -486,7 +486,7 @@
 
     const bottom = Math.max(
       top,
-      Math.min(height, rsvpRect.top)
+      Math.min(height, coverRect.bottom)
     );
 
     layer.style.clipPath = `inset(
@@ -546,7 +546,7 @@
     observer = new ResizeObserver(schedule);
 
     observer.observe(main);
-    observer.observe(rsvp);
+    observer.observe(cover);
   }
 
   // ==========================================
