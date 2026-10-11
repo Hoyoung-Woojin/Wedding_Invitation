@@ -103,3 +103,11 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   .family .relationship{font-size:calc(10px + 4pt)}
   .family strong{font-size:calc(15px + 4pt)}
 }
+
+/* V2 cover: couple names 2px higher than previous (-3px -> -5px).
+   Ampersand only: +2pt and darker green. */
+.cover h2{transform:translateY(-5px)}
+.cover .name-divider{font-size:calc(4.4cqw + 9pt);color:#17391d}
+@supports not (width:1cqw){
+  .cover .name-divider{font-size:calc(18px + 3pt + 6pt)}
+}
