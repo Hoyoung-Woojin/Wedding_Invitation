@@ -197,3 +197,18 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   color:#202020;
   font-weight:700;
 }
+
+/* V2: reference olive branch image, replacing the previous compact ornament. */
+.invitation img.invitation-ornament{
+  display:block;
+  width:230px;
+  height:auto;
+  max-width:72%;
+  margin:0 auto 35px;
+  object-fit:contain;
+  overflow:visible;
+}
+
+/* Match invitation body font size to family relationship labels ("의 외동 아들" / "의 둘째 딸"). */
+.invitation p:not(.signature){font-size:calc(2.8cqw + 4pt)}
+@supports not (width:1cqw){.invitation p:not(.signature){font-size:calc(10px + 4pt)}}
