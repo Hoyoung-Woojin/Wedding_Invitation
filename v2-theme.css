@@ -82,3 +82,24 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 }
 /* Date and venue only: dark neutral text for higher legibility. */
 .cover .cover-date,.cover .cover-venue{color:#202020}
+
+/* 2026-10-11: Wedding Day through Invitation: increase text sizes by 2pt.
+   Excluded: Coded by Hoyoung, Designed by Woojin and Wedding Day title.
+   RSVP and all following sections, dialogs and controls remain unchanged. */
+.cover h2{font-size:calc(4.55cqw + 4pt)}
+.cover .name-divider{font-size:calc(4.4cqw + 7pt)}
+.cover p{font-size:calc(3.65cqw + 4pt)}
+.family p{font-size:calc(3.8cqw + 4pt)}
+.family .relationship{font-size:calc(2.8cqw + 4pt)}
+.family strong{font-size:calc(4cqw + 4pt)}
+.invitation p{font-size:calc(14px + 4pt)}
+.invitation .signature{font-size:calc(12px + 4pt)}
+/* Decorative flower symbol is not a text line; keep its existing size. */
+@supports not (width:1cqw){
+  .cover h2{font-size:calc(19px + 4pt)}
+  .cover .name-divider{font-size:calc(18px + 3pt + 4pt)}
+  .cover p{font-size:calc(14px + 4pt)}
+  .family p{font-size:calc(14px + 4pt)}
+  .family .relationship{font-size:calc(10px + 4pt)}
+  .family strong{font-size:calc(15px + 4pt)}
+}
