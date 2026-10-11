@@ -168,3 +168,24 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 
 /* Family relationship labels: black text, keep size and layout. */
 .family .relationship{color:#202020;}
+
+/* V2: RSVP guest-count label matches the phone placeholder font size. */
+#modal #companions .counter > span{
+  font-size:calc(13px + 1pt);
+}
+
+/* V2: center button text both horizontally and vertically in RSVP form. */
+#modal #form button,
+#modal #form .options label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  line-height:1.4;
+}
+#modal #form .counter-controls button{
+  padding:0;
+}
+
+/* RSVP attendance-count prompt: black text only. */
+#modal #count-label{color:#202020;}
