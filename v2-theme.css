@@ -289,3 +289,30 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 /* V2 cover correction: restore the original oval frame size; zoom only the image inside it. */
 .cover .cover-photo{width:90%;max-width:none;aspect-ratio:3 / 4;margin-inline:auto;border-radius:50%;overflow:hidden;}
 .cover .cover-photo .cover-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.12);transform-origin:center center;}
+
+/* V2 RSVP modal: remove persistent outline/border on radio choices.
+   Keep the existing selected background and default soft border. */
+#modal #form .options label,
+#modal #form .options label:focus,
+#modal #form .options label:focus-within,
+#modal #form .options label:has(input:checked){
+  outline:none !important;
+  outline-offset:0;
+  border:1px solid #eee;
+}
+#modal #form .options input[type="radio"]:focus,
+#modal #form .options input[type="radio"]:focus-visible{
+  outline:none !important;
+}
+
+/* Move only the attendance choice lettering visually 1px lower,
+   without moving the button box (top/bottom padding offset). */
+#modal #form fieldset:nth-of-type(2) .options label{
+  padding-top:13px;
+  padding-bottom:11px;
+}
+
+/* Nudge the minus/plus glyphs 1px down inside the same button dimensions. */
+#modal #form .counter-controls button{
+  padding:2px 0 0 !important;
+}
