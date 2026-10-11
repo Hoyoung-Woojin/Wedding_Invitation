@@ -189,3 +189,11 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 
 /* RSVP attendance-count prompt: black text only. */
 #modal #count-label{color:#202020;}
+
+/* V2: bank account holder/name and account number: black + bold. */
+.account-section .account-person,
+.account-section .account-name,
+.account-section .account-number{
+  color:#202020;
+  font-weight:700;
+}
