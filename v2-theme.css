@@ -222,3 +222,7 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
 .share-section .share-buttons #share-invitation::after{
   color:#202020;
 }
+
+/* V2: Make invitation signature the same font size as the invitation body. */
+.invitation .signature{font-size:calc(2.8cqw + 4pt)}
+@supports not (width:1cqw){.invitation .signature{font-size:calc(10px + 4pt)}}
