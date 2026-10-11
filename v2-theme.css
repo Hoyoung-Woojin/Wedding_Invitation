@@ -146,3 +146,9 @@ strong,b,.family strong,.family b,.cover h2,.transport-block h3,.account-name,.r
   color:#404040;
   opacity:1;
 }
+
+/* RSVP main-section meal notice only: +1pt, black. */
+.rsvp-section > small{
+  font-size:calc(11px + 3pt);
+  color:#202020 !important;
+}
